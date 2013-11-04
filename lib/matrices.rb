@@ -137,13 +137,13 @@ class Matriz
 end
 
 
-m1 = Matriz.new(2)
-m2 = Matriz.new(2)
+#m1 = Matriz.new(2)
+#m2 = Matriz.new(2)
 
-print "\n"
-puts "Suma de matrices:"
-m1 + m2
+#print "\n"
+#puts "Suma de matrices:"
+#m1 + m2
 
-print "\n"
-puts "Producto de matrices:"
-m1 * m2
+#print "\n"
+#puts "Producto de matrices:"
+#m1 * m2
