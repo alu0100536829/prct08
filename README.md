@@ -1,0 +1,2 @@
+- Falta crear las pruebas para matriz
+- Usar guard (fijarse en el hecho por coromoto para punto)
