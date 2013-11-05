@@ -17,7 +17,9 @@
 =end
 
 class Matriz
-	attr_reader :matriz, :filas, :columnas
+	attr_reader :matriz, :filas, :columnas #crea los getters para los atributos
+	
+	#Método para crear matriz con valores introducidos por teclado
 	def initialize
 
 		#inicializamos las variables
@@ -29,6 +31,7 @@ class Matriz
 			print "Error, intentelo de nuevo: "
 		end
 		
+		#mismas columnas que filas al ser matriz cuadrada
 		@columnas = @filas
 		
 		#comprobamos que los datos de entradas sean numericos
@@ -42,6 +45,7 @@ class Matriz
 		
 	end
 	
+	#Método para crear matriz con valores predefinidos
 	def initialize(fil_col)
 
 		#comprobamos que los datos de entradas sean numericos
@@ -66,6 +70,7 @@ class Matriz
 		
 	end
 	
+# Método para introducir los valores de la matriz por teclado
 	def asignar_matriz_teclado(a,filas)
 		i = 0
 		while( i < filas ) 
@@ -81,6 +86,8 @@ class Matriz
 		end
 	end
 
+
+# Método que muestra la matriz
 	def mostrar(a)
 		i = 0
 		while (i < a.length)
@@ -94,6 +101,7 @@ class Matriz
 		end
 	end
 	
+# Producto de matrices
 	def * (other)
 		c = []
 		i = 0
@@ -116,6 +124,7 @@ class Matriz
 		return c
 	end
 	
+# Suma de matrices
 	def + (other)
 	c = []
 		i = 0
@@ -134,6 +143,25 @@ class Matriz
 
 	end
 	
+# Resta de matrices
+	def - (other)
+	c = []
+		i = 0
+		while(i < @filas)
+			j = 0
+			fila = []
+			while(j < @columnas)
+				fila[j] = @matriz[i][j] - other.matriz[i][j]				
+				j += 1
+			end
+		c << fila
+		i += 1	
+		end
+		mostrar(c)
+		return c
+
+	end
+
 end
 
 
@@ -145,5 +173,10 @@ end
 #m1 + m2
 
 #print "\n"
+#puts "Resta de matrices:"
+#m1 - m2
+
+#print "\n"
 #puts "Producto de matrices:"
 #m1 * m2
+
