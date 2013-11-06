@@ -65,7 +65,7 @@ class Matriz
 				end
 		end
 		
-		puts "Elementos de la matriz: "
+		#puts "Elementos de la matriz: "
 		#mostrar(@matriz)
 		
 	end
@@ -166,8 +166,8 @@ class Matriz
 end
 
 
-m1 = Matriz.new(2)
-m2 = Matriz.new(2)
+m1 = Matriz.new(3)
+m2 = Matriz.new(3)
 
 print "\n"
 puts "Suma de matrices:"
