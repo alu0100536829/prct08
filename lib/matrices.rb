@@ -66,7 +66,7 @@ class Matriz
 		end
 		
 		puts "Elementos de la matriz: "
-		mostrar(@matriz)
+		#mostrar(@matriz)
 		
 	end
 	
@@ -88,7 +88,7 @@ class Matriz
 
 
 # Método que muestra la matriz
-	def mostrar(a)
+	def to_s(a)
 		i = 0
 		while (i < a.length)
 			j = 0
@@ -120,7 +120,7 @@ class Matriz
 			c << fila
 			i += 1
 		end
-		mostrar(c)
+		#mostrar(c)
 		return c
 	end
 	
@@ -138,7 +138,7 @@ class Matriz
 		c << fila
 		i += 1	
 		end
-		mostrar(c)
+		#mostrar(c)
 		return c
 
 	end
@@ -157,26 +157,27 @@ class Matriz
 		c << fila
 		i += 1	
 		end
-		mostrar(c)
+		#mostrar(c)
 		return c
 
 	end
 
+	
 end
 
 
-#m1 = Matriz.new(2)
-#m2 = Matriz.new(2)
+m1 = Matriz.new(2)
+m2 = Matriz.new(2)
 
-#print "\n"
-#puts "Suma de matrices:"
-#m1 + m2
+print "\n"
+puts "Suma de matrices:"
+puts (m1 + m2).to_s
 
-#print "\n"
-#puts "Resta de matrices:"
-#m1 - m2
+print "\n"
+puts "Resta de matrices:"
+puts (m1 - m2).to_s
 
-#print "\n"
-#puts "Producto de matrices:"
-#m1 * m2
+print "\n"
+puts "Producto de matrices:"
+puts (m1 * m2).to_s
 
