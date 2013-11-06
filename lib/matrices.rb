@@ -1,19 +1,22 @@
 =begin
-**********************************************************
+*******************************************************************************************
 * Autores: 
        Teno González Dos Santos
        Albano José Yanes Reyes
 * Fecha: 23/10/2013
-* Asignatura: Lenguejes y Paradigmas de Programación
+* Asignatura: Lenguujes y Paradigmas de Programación
 * Tercero de Grado en Ingeniería Informática
 * Universidad de la Laguna
 *
-* Practica 07: Realice las modificaciones oportunas 
-*   sobre la Practica 06 para contemplar el uso del 
-*   módulo Comparable. Ademas La clase se ha de 
-*   compilar con la herramienta Travis de 
-*   integración continua
-***********************************************************
+* Practica 08: Considere el desarrollo de una clase Ruby para representar Matrices. 
+1.-) Cree una clase para representar Matrices usando desarrollo dirigido por pruebas 
+    (Test Driven Development - TDD) con la herramienta Rspec. 
+2.-) Se ha es seguir la metodología de Integración continua (Continuos Integration) 
+     usando la herramienta Travis. 
+3.-) Además se ha de comprobar el funcionamiento de la aplicación con la herramienta 
+    Guard de comprobación continua (Continuous testing) de manera que permita la 
+    ejecución de las pruebas definidas con rspec cuando se modifiquen. 
+********************************************************************************************
 =end
 
 class Matriz
