@@ -2,8 +2,8 @@ require "./lib/matrices.rb"
 
 describe Matriz do
 	before :each do
-		@m1 = Matriz.new(3,3)
-		@m2 = Matriz.new(3,3)
+		@m1 = Matriz.new(3)
+		@m2 = Matriz.new(3)
     end
     
     describe "# Almacenamiento del numero de filas y columnas" do
